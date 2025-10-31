@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Saifullah — Portfolio</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header">
+<nav class="navbar">
+<ul class="nav-links">
+<li><a href="#about">About</a></li>
+<li><a href="#skills">Skills</a></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+<label class="theme-switch">
+<input id="themeSwitch" type="checkbox" aria-label="Toggle theme">
+<span class="slider"></span>
+</label>
+</nav>
+
+
+<div class="hero center">
+<h1 class="name">Saifullah</h1>
+<p class="tagline">Code with Logic &amp; Creativity</p>
+<p class="sub">BS Software Engineering — NUML Islamabad</p>
+<div class="hero-cta">
+<a class="btn outline" href="#projects">View Projects</a>
+<a class="btn" href="#contact">Contact Me</a>
+</div>
+</div>
+</header>
+
+
+<main>
+<section id="about" class="container about">
+<h2>About Me</h2>
+<p>I am a BS Software Engineering student at NUML Islamabad with a passion for mobile app development and web technologies. I enjoy solving problems using clean code and practical algorithms.</p>
+</section>
+
+
+<section id="skills" class="container skills">
+<h2>Skills</h2>
+<div class="skill-grid">
+<span class="skill">HTML</span>
+<span class="skill">CSS</span>
+<span class="skill">Java</span>
+<span class="skill">C++</span>
+<span class="skill">Data Structures &amp; Algorithms (DSA)</span>
+<span class="skill">Git &amp; GitHub</span>
+</div>
+</section>
+
+
+<section id="projects" class="container projects">
+<h2>Projects</h2>
+<div class="projects-grid">
+<article class="project-card">
+<h3>Portfolio Website</h3>
+<p>Personal portfolio built with modern responsive design — shows skills and projects. (This site)</p>
+<div class="card-actions">
+<a class="btn outline small" href="https://github.com/HeySaif/My-portfolio">View on GitHub</a>
+</div>
+</article>
+
+
+<article class="project-card">
+<h3>Weather App</h3>
+<p>Simple weather web app that fetches real-time data from a public API (OpenWeatherMap). Good practice for APIs and async JS.</p>
+<div class="card-actions">
+<a class="btn outline small" href="#">Coming Soon</a>
+</html>
