@@ -15,16 +15,15 @@
 <li><a href="#projects">Projects</a></li>
 <li><a href="#contact">Contact</a></li>
 </ul>
-<label class="theme-switch">
-<input id="themeSwitch" type="checkbox" aria-label="Toggle theme">
-<span class="slider"></span>
-</label>
-</nav>
+<button id="theme-toggle" aria-label="Toggle theme">
+    <span class="toggle-circle"></span>
+</button>
 
+</nav>
 
 <div class="hero center">
 <h1 class="name">Saifullah</h1>
-<p class="tagline">Code with Logic &amp; Creativity</p>
+<p class="tagline">Code with Logic & Creativity</p>
 <p class="sub">BS Software Engineering — NUML Islamabad</p>
 <div class="hero-cta">
 <a class="btn outline" href="#projects">View Projects</a>
@@ -33,13 +32,11 @@
 </div>
 </header>
 
-
 <main>
 <section id="about" class="container about">
 <h2>About Me</h2>
 <p>I am a BS Software Engineering student at NUML Islamabad with a passion for mobile app development and web technologies. I enjoy solving problems using clean code and practical algorithms.</p>
 </section>
-
 
 <section id="skills" class="container skills">
 <h2>Skills</h2>
@@ -48,11 +45,10 @@
 <span class="skill">CSS</span>
 <span class="skill">Java</span>
 <span class="skill">C++</span>
-<span class="skill">Data Structures &amp; Algorithms (DSA)</span>
-<span class="skill">Git &amp; GitHub</span>
+<span class="skill">Data Structures & Algorithms (DSA)</span>
+<span class="skill">Git & GitHub</span>
 </div>
 </section>
-
 
 <section id="projects" class="container projects">
 <h2>Projects</h2>
@@ -65,10 +61,31 @@
 </div>
 </article>
 
-
 <article class="project-card">
 <h3>Weather App</h3>
 <p>Simple weather web app that fetches real-time data from a public API (OpenWeatherMap). Good practice for APIs and async JS.</p>
 <div class="card-actions">
 <a class="btn outline small" href="#">Coming Soon</a>
+</div>
+</article>
+</div>
+</section>
+
+<section id="contact" class="container contact">
+<h2>Contact</h2>
+<form class="contact-form" onsubmit="return handleContact(event)">
+<input type="email" placeholder="Enter your email" required>
+<textarea placeholder="Your message" rows="3" required></textarea>
+<button class="btn">Send Message</button>
+<div id="formStatus" class="form-status"></div>
+</form>
+</section>
+</main>
+
+<footer class="site-footer">
+<p>© 2025 Saifullah — All Rights Reserved</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
 </html>

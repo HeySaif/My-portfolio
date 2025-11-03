@@ -1,30 +1,27 @@
-// Theme toggle and a simple contact form handler
-(function(){
-const switchEl = document.getElementById('themeSwitch');
-const body = document.body;
-// restore theme
-const saved = localStorage.getItem('theme');
-if(saved === 'light') body.classList.add('light-mode');
-if(switchEl) switchEl.checked = saved === 'light';
-if(switchEl){
-switchEl.addEventListener('change', ()=>{
-if(switchEl.checked){
-body.classList.add('light-mode');
-localStorage.setItem('theme','light');
-} else {
-body.classList.remove('light-mode');
-localStorage.setItem('theme','dark');
-}
+// Smooth scroll animation for navbar links
+document.querySelectorAll('a[href^="#"]').forEach(link => {
+  link.addEventListener('click', function (e) {
+    e.preventDefault();
+    const target = document.querySelector(this.getAttribute('href'));
+    target.scrollIntoView({
+      behavior: 'smooth',
+      block: 'start'
+    });
+  });
 });
+
+// Toggle navbar on smaller screens (if menu icon added in future)
+const menuBtn = document.querySelector('.menu-btn');
+const navLinks = document.querySelector('.nav-links');
+
+if (menuBtn) {
+  menuBtn.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+  });
 }
 
 
-window.handleContact = function handleContact(e){
-e.preventDefault();
-const status = document.getElementById('formStatus');
-status.textContent = 'Thanks — message will be sent (demo).';
-// For real email sending, integrate an API like Formspree / EmailJS or a simple server endpoint.
-setTimeout(()=>{status.textContent='Message ready — (demo only)';},1200);
-return false;
-}
-})();
+document.getElementById("theme-toggle").addEventListener("click", () => {
+    document.body.classList.toggle("light-theme");
+});
+
